@@ -6,6 +6,12 @@ void main() {
 }
 
 class Xylophone extends StatelessWidget {
+  void playSound(int i){
+    final assetsAudioPlayer = AssetsAudioPlayer();
+    assetsAudioPlayer.open(
+      Audio("assets/note$i.wav"),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,12 +37,8 @@ class Xylophone extends StatelessWidget {
               Expanded(
                 child: Container(
                   child: FlatButton(
-                    child: null,
                     onPressed: () {
-                      final assetsAudioPlayer = AssetsAudioPlayer();
-                      assetsAudioPlayer.open(
-                        Audio("assets/note1.wav"),
-                      );
+                      playSound(1);
                     },
                     color: Colors.red,
                   ),
@@ -47,10 +49,7 @@ class Xylophone extends StatelessWidget {
                   child: FlatButton(
                     child: null,
                     onPressed: () {
-                      final assetsAudioPlayer = AssetsAudioPlayer();
-                      assetsAudioPlayer.open(
-                          Audio("assets/note2.wav"),
-                      );
+                      playSound(2);
                     },
                     color: Colors.orange,
                   ),
@@ -61,10 +60,7 @@ class Xylophone extends StatelessWidget {
                   child: FlatButton(
                     child: null,
                     onPressed: () {
-                      final assetsAudioPlayer = AssetsAudioPlayer();
-                      assetsAudioPlayer.open(
-                        Audio("assets/note3.wav"),
-                      );
+                      playSound(3);
                     },
                     color: Colors.yellow,
                   ),
@@ -76,10 +72,7 @@ class Xylophone extends StatelessWidget {
                   child: FlatButton(
                     child: null,
                     onPressed: () {
-                      final assetsAudioPlayer = AssetsAudioPlayer();
-                      assetsAudioPlayer.open(
-                        Audio("assets/note4.wav"),
-                      );
+                      playSound(4);
                     },
                     color: Colors.green,
                   ),
@@ -90,10 +83,7 @@ class Xylophone extends StatelessWidget {
                   child: FlatButton(
                     child: null,
                     onPressed: () {
-                      final assetsAudioPlayer = AssetsAudioPlayer();
-                      assetsAudioPlayer.open(
-                        Audio("assets/note5.wav"),
-                      );
+                      playSound(5);
                     },
                     color: Colors.blue,
                   ),
@@ -104,10 +94,7 @@ class Xylophone extends StatelessWidget {
                   child: FlatButton(
                     child: null,
                     onPressed: () {
-                      final assetsAudioPlayer = AssetsAudioPlayer();
-                      assetsAudioPlayer.open(
-                        Audio("assets/note6.wav"),
-                      );
+                      playSound(6);
                     },
                     color: Colors.indigo,
                   ),
@@ -118,10 +105,7 @@ class Xylophone extends StatelessWidget {
                   child: FlatButton(
                     child: null,
                     onPressed: () {
-                      final assetsAudioPlayer = AssetsAudioPlayer();
-                      assetsAudioPlayer.open(
-                        Audio("assets/note1.wav"),
-                      );
+                      playSound(7);
                     },
                     color: Colors.purple,
                   ),
